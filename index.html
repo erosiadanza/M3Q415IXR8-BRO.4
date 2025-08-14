@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+
+<!-- منع الكاش في المتصفح -->
+<meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<title></title>
+<style>html,body{margin:0;height:100%;background:#fff}</style>
+
+<script>
+/* Redirect فوري بدون ترك الصفحة في الـ history */
+(function () {
+  var url = 'https://www.no.bot.com'; // <-- عدّل الوجهة هنا
+  // اختيارياً: بارامتر لكسر الكاش
+  var sep = url.indexOf('?') === -1 ? '?' : '&';
+  var target = url + sep + '_=' + Date.now();
+  location.replace(target);
+})();
+</script>
+
+<!-- بديل عند تعطيل الجافاسكربت -->
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://www.google.com">
+</noscript>
+</head>
+<body></body>
+</html>
